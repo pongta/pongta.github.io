@@ -103,6 +103,7 @@ saveButton.addEventListener("click", function () {
 
 getLastQuestionId = function () {
   // const lastId = quesRef.orderBy("qno").limit(1);
+  clearQuestionDetails();
   var selectQuestionNo = document.getElementById("selectQuestionNo");
 
   removeOptions(selectQuestionNo);
@@ -197,7 +198,7 @@ onQuestionTitleSelect = function () {
   // console.log("selected nth question  is "+ selectedQuestionTitle.value);
   questionTitleNo = selectedQuestionTitle.value;
   getLastQuestionId();
-  getQuestionDetail()
+  // getQuestionDetail()
 }
 
 onQuestionSelect = function () {
